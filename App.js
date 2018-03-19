@@ -18,18 +18,18 @@ import ThirdScreen from './app/ThirdScreen';
 
 const DrawerExample = DrawerNavigator(
     {
-        First : {
+        Home : {
 
               path: '/',
               screen : FirstScreen,
         },
-        Second : {
+        Guitar : {
 
               path:'/sent',
               screen : SecondScreen,
 
         },
-        Third : {
+        Piano : {
 
           path:'/sent',
           screen : ThirdScreen,
@@ -39,7 +39,7 @@ const DrawerExample = DrawerNavigator(
 
     },
     {
-          initialRouteName : 'First',
+          initialRouteName : 'Home',
           drawerPosition : 'left'
 
     }
