@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Text,View,Button,Image} from 'react-native';
+import {Text,View,Button,Image, StyleSheet} from 'react-native';
 import {Icon} from 'native-base';
 export default class FirstScreen extends Component {
 
@@ -32,21 +32,20 @@ export default class FirstScreen extends Component {
 
                 return <View style={
                     {    
-                        flex: 1,
-                        justifyContent : 'center',
-                        alignItems : 'center'
+
 
                     }        
 
                 }>
 
-                    <Text style={{fontSize:30,color:'green'}}>
-                    Screen 1 
+                    <Text style={{ textAlign:'center',fontSize:30,color:'green'}}>
+                    Home 
                     </Text> 
-                    <Button 
-                        onPress={()=> this.props.navigation.navigate('DrawerOpen')}
-                        title="Open DrawNavigator"
-                    /> 
+                    <Icon name="ios-menu"
+                           onPress={()=> this.props.navigation.navigate('DrawerOpen')} 
+                           title="Open DrawNavigator">
+                    </Icon>
+                   
 
                 </View> 
 
@@ -55,3 +54,9 @@ export default class FirstScreen extends Component {
 
 
 }
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      paddingTop: 100
+    }
+  });
