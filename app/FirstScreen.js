@@ -11,7 +11,15 @@ export default class FirstScreen extends Component {
 
                         return(
 
-                                <Text> FirstScreen </Text> 
+                                            
+                                <Icon
+                                name='ios-home'
+                                size={150}
+                                color='#887700'
+                                
+                                />
+                                            
+                          
 
 
                         );

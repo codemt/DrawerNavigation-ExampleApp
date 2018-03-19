@@ -5,13 +5,18 @@ export default class SecondScreen extends Component {
 
         static navigationOptions = {
 
-                tabBarLabel : 'Screen1',
+                tabBarLabel : 'Screen2',
                 drawerIcon : () => {
 
 
                         return(
 
-                                <Text> FirstScreen </Text> 
+                            <Icon
+                            name='ios-people'
+                            size={150}
+                            color='#887700'
+                            
+                            />
 
 
                         );
@@ -33,7 +38,7 @@ export default class SecondScreen extends Component {
                 }>
 
                     <Text style={{fontSize:30,color:'green'}}>
-                    Screen 1 
+                    Screen 2
                     </Text> 
                     <Button 
                         onPress={()=> this.props.navigation.navigate('DrawerOpen')}
