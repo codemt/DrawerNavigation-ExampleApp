@@ -14,31 +14,68 @@ export default class SecondScreen extends React.Component {
             </Button>
           </Left>
           <Body>
-            <Title> 101MusicalsAcademyofMusic</Title>
+            <Title> Guitar</Title>
           </Body>
           <Right />
         </Header>
         <Content padder>
           <Card>
+            <CardItem header>
+                <Text>Notes on the Guitar.</Text>
+              </CardItem>
             <CardItem>
               <Body>
-                <Text>We Specialise in Teaching Guitar and Piano in Vikhroli.</Text>
+                <Text></Text>
+                <Image
+                style={{width: 300, height: 100,resizeMode:'contain'}} 
+                source={{uri: 'http://101musicalsacademy.in/wp-content/uploads/2016/06/guitar_neck.gif'}}
+              />
               </Body>
             </CardItem>
           </Card>
           <Card>
+          <CardItem header>
+                <Text>The Blues Scale</Text>
+              </CardItem>
             <CardItem>
               <Body>
-              <Image resizeMode='cover' source={ require('./images/classimage1.jpg')} />
-              <Text>This is a Private Music Class based in Vikhroli .
-Established in 2012 , founded by Musician/Artist – Mithilesh Meshram.
-We Teach from Basics to the very Professional Level.
-We specialise in teaching all techniques.
-Fingerstyle technique is also taught for People who have completed the Basic and Advanced Levels.
-Jam Sessions are Organised for the Academy Members to Learn how to time their Music.
-Vocal Training is also Provided once Students and Members start playing Rhythm Guitar.
-Batch consists of 6-7 people and is of 2 hours each.
-Music Notes and Theory are Provided. We Don’t Teach Staff Notations but we Teach Music Tabs which are generally used everywhere.</Text>
+              <Text></Text>
+                <Image
+                style={{width: 300, height: 100,resizeMode:'contain'}} 
+                source={{uri: 'http://101musicalsacademy.in/wp-content/uploads/2016/07/blues-scale.jpg'}}
+              />
+              
+    
+              </Body>
+            </CardItem>
+          </Card>
+          <Card>
+          <CardItem header>
+                <Text>The Pentatonic Scale</Text>
+              </CardItem>
+            <CardItem>
+              <Body>
+              <Text></Text>
+                <Image
+                style={{width: 300, height: 100,resizeMode:'contain'}} 
+                source={{uri: 'http://101musicalsacademy.in/wp-content/uploads/2016/06/minor-pentatonic-scale-1.jpg'}}
+              />
+              
+    
+              </Body>
+            </CardItem>
+          </Card>
+          <Card>
+          <CardItem header>
+                <Text>Guitar Architecture</Text>
+              </CardItem>
+            <CardItem>
+              <Body>
+              <Text></Text>
+                <Image
+                style={{width: 300, height: 100,resizeMode:'cover'}} 
+                source={{uri: 'http://101musicalsacademy.in/wp-content/uploads/2016/06/acousticguitar-diagram-image.jpg'}}
+              />
               </Body>
             </CardItem>
           </Card>

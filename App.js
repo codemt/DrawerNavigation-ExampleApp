@@ -15,6 +15,7 @@ import { DrawerNavigator } from 'react-navigation';
 import FirstScreen from './app/FirstScreen';
 import SecondScreen from './app/SecondScreen';
 import ThirdScreen from './app/ThirdScreen';
+import VideoLessons from './app/VideoLessons';
 
 const DrawerExample = DrawerNavigator(
     {
@@ -35,6 +36,12 @@ const DrawerExample = DrawerNavigator(
           screen : ThirdScreen,
 
     },
+    VideoLessons : {
+
+      path:'/sent',
+      screen : VideoLessons,
+
+},
 
 
     },

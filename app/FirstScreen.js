@@ -4,6 +4,7 @@ import { Container, Header, Title, Left, Icon, Right, Button, Body, Content,Text
 export default class FirstScreen extends React.Component {
   render() {
     return (
+      
       <Container>
         <Header>
           <Left>
@@ -19,7 +20,7 @@ export default class FirstScreen extends React.Component {
           <Right />
         </Header>
         <Content padder>
-          <Card>
+          <Card >
             <CardItem>
               <Body>
                 <Text>We Specialise in Teaching Guitar and Piano in Vikhroli.</Text>
