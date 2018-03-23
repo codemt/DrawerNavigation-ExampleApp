@@ -392,6 +392,12 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
+ImageViewer@^1.5.8:
+  version "1.5.8"
+  resolved "https://registry.yarnpkg.com/ImageViewer/-/ImageViewer-1.5.8.tgz#581801d704e7e75833793b908cac50e7c8860d33"
+  dependencies:
+    prop-types "^15.6.0"
+
 abab@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
@@ -4330,6 +4336,16 @@ react-native-easy-grid@0.1.17:
   resolved "https://registry.yarnpkg.com/react-native-easy-grid/-/react-native-easy-grid-0.1.17.tgz#fad8cb371d465828c1c71daa4d8b513d33253452"
   dependencies:
     lodash "^4.11.1"
+
+react-native-image-pan-zoom@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-image-pan-zoom/-/react-native-image-pan-zoom-2.1.1.tgz#720b1aafe78c514fefc8df9d868f0c3cfe2c98b0"
+
+react-native-image-zoom-viewer@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-image-zoom-viewer/-/react-native-image-zoom-viewer-2.1.0.tgz#b84b469770c5efe59d04f42bcaf202291a49127c"
+  dependencies:
+    react-native-image-pan-zoom "^2.1.0"
 
 react-native-iphone-x-helper@^1.0.1:
   version "1.0.2"
