@@ -24,13 +24,13 @@ const DrawerExample = DrawerNavigator(
               path: '/',
               screen : FirstScreen,
         },
-        Guitar : {
+        Piano : {
 
               path:'/sent',
               screen : SecondScreen,
 
         },
-        Piano : {
+        Guitar : {
 
           path:'/sent',
           screen : ThirdScreen,

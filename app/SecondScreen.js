@@ -29,6 +29,7 @@ export default class SecondScreen extends Component {
               
                     <NotesonPiano />
                     <OctavesonPiano />
+                    <PianoMinorScales />
 
 
               
