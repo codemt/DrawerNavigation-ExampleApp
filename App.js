@@ -36,7 +36,7 @@ const DrawerExample = DrawerNavigator(
           screen : ThirdScreen,
 
     },
-    VideoLessons : {
+    KuchtohHai_Piano : {
 
       path:'/sent',
       screen : VideoLessons,

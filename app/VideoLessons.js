@@ -1,72 +1,89 @@
-import React from "react";
-import { StatusBar , Image } from "react-native";
-import { Container, Header, Title, Left, Icon, Right, Button, Body, Content,Text, Card, CardItem } from "native-base";
-export default class ThirdScreen extends React.Component {
+import React from 'react';
+import {
+  StyleSheet,
+  View,
+  Text,
+  ScrollView,
+  TouchableOpacity,
+  PixelRatio,
+  Dimensions,
+  Platform,
+} from 'react-native';
+import YouTube, { YouTubeStandaloneIOS, YouTubeStandaloneAndroid } from 'react-native-youtube';
+
+export default class VideoLessons extends React.Component {
+  state = {
+    isReady: false,
+    status: null,
+    quality: null,
+    error: null,
+    isPlaying: true,
+    isLooping: true,
+    duration: 0,
+    currentTime: 0,
+    fullscreen: false,
+    containerMounted: false,
+    containerWidth: null,
+  };
+
   render() {
     return (
-      <Container>
-        <Header>
-          <Left>
-            <Button
-              transparent
-              onPress={() => this.props.navigation.navigate("DrawerOpen")}>
-              <Icon name="menu" />
-            </Button>
-          </Left>
-          <Body>
-            <Title> Piano</Title>
-          </Body>
-          <Right />
-        </Header>
-        <Content padder>
-          <Card>
-            <CardItem header>
-                <Text>Notes on the Piano.</Text>
-              </CardItem>
-            <CardItem>
-              <Body>
-                <Text></Text>
-                <Image
-                style={{width: 300, height: 100,resizeMode:'contain'}} 
-                source={{uri: 'http://101musicalsacademy.in/wp-content/uploads/2016/06/32-key-keyboard-1.jpg'}}
-              />
-              </Body>
-            </CardItem>
-          </Card>
-          <Card>
-          <CardItem header>
-                <Text>Octaves on the Piano </Text>
-              </CardItem>
-            <CardItem>
-              <Body>
-              <Text></Text>
-                <Image
-                style={{width: 300, height: 100,resizeMode:'contain'}} 
-                source={{uri: 'http://101musicalsacademy.in/wp-content/uploads/2016/06/2.jpg'}}
-              />
-              
-    
-              </Body>
-            </CardItem>
-          </Card>
-          <Card>
-          <CardItem header>
-                <Text>Piano Minor Scales</Text>
-              </CardItem>
-            <CardItem>
-              <Body>
-              <Text></Text>
-                <Image
-                style={{width: 300, height: 100,resizeMode:'contain'}} 
-                source={{uri: 'http://101musicalsacademy.in/wp-content/uploads/2016/06/minorscales1.png'}}
-              />
-              
-    
-              </Body>
-            </CardItem>
-          </Card>
-        </Content>
-      </Container>
+               <View>
+                  <YouTube
+                    apiKey="AIzaSyBF6_Yez2VsGeL4AXNo-m7qqJgQlSXtDR4"
+                    videoId="KVZ-P-ZI6W4"   // The YouTube video ID
+                    play={false}             // control playback of video with true/false
+                    fullscreen={false}       // control whether the video should play in fullscreen or inline
+                    loop={true}             // control whether the video should loop when ended
+
+                    onReady={e => this.setState({ isReady: true })}
+                    onChangeState={e => this.setState({ status: e.state })}
+                    onChangeQuality={e => this.setState({ quality: e.quality })}
+                    onError={e => this.setState({ error: e.error })}
+
+                    style={{ alignSelf: 'stretch', height: 300 }}
+                  />
+            
+              <Text> Hello </Text>
+             </View> 
+
+
     );
+    
   }
 }
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  buttonGroup: {
+    flexDirection: 'row',
+    alignSelf: 'center',
+  },
+  button: {
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    alignSelf: 'center',
+  },
+  buttonText: {
+    fontSize: 18,
+    color: 'blue',
+  },
+  buttonTextSmall: {
+    fontSize: 15,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+  player: {
+    alignSelf: 'stretch',
+    marginVertical: 10,
+  },
+});
