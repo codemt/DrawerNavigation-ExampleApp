@@ -10,9 +10,10 @@ class Main extends Component{
         this.state = { currentScreen : 'SplashScreen'};
         console.log('Start Doing Some Tasks')
         setTimeout(()=>{
+            window.alert(`Welcome , Please use the Drawer Menu to Navigate to other Pages.`)
             console.log('Done some tasks for 3 seconds')
             this.setState({currentScreen:'App'})
-        },3000)
+        },5000)
 
     }
     render(){

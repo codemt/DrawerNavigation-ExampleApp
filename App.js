@@ -15,7 +15,8 @@ import { DrawerNavigator } from 'react-navigation';
 import FirstScreen from './app/FirstScreen';
 import SecondScreen from './app/SecondScreen';
 import ThirdScreen from './app/ThirdScreen';
-import VideoLessons from './app/VideoLessons';
+import KuchtohHai from './app/KuchtohHai';
+import Azhar from './app/Piano/Azhar';
 
 const DrawerExample = DrawerNavigator(
     {
@@ -39,17 +40,20 @@ const DrawerExample = DrawerNavigator(
     KuchtohHai_Piano : {
 
       path:'/sent',
-      screen : VideoLessons,
-
-},
-
+      screen : KuchtohHai,
 
     },
-    {
+BolDoNaZara_Piano : {
+
+      path:'/sent',
+      screen: Azhar,
+   }
+},
+   {
           initialRouteName : 'Home',
           drawerPosition : 'left'
 
-    }
+  }
 
 );
 export default DrawerExample;

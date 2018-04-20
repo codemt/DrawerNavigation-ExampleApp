@@ -30,7 +30,11 @@ export default class FirstScreen extends React.Component {
           <Card>
             <CardItem>
               <Body>
-              <Image resizeMode='cover' source={ require('./images/classimage1.jpg')} />
+              <Image
+              style={{width:300,height:200}} 
+              resizeMode='contain' 
+              source={ require('./images/classimage2.jpg')} 
+              />
               <Text>This is a Private Music Class based in Vikhroli .
 Established in 2012 , founded by Musician/Artist – Mithilesh Meshram.
 We Teach from Basics to the very Professional Level.
